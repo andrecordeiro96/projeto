@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "header";
+@import "footer";
 @import "index";
 @import "contacts";
 @import "projects";
@@ -17,6 +18,7 @@ html, body {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   max-width: $max-width;

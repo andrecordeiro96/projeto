@@ -28,13 +28,13 @@ description: >- # this means to ignore newlines until "baseurl:"
 # Build settings
 
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
 
 # Navigation
 header_pages:
-  - sobre.html
-  - projectos.html
-  - contactos.html
+  - about.html
+  - projects.html
+  - contacts.html
 
 # Collections
 collections:

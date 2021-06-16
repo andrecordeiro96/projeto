@@ -5,12 +5,12 @@ title: Contactos
 
 <section id="contacts">
   <div class="grid-container">
-    {% for item in site.data.social_networks %}
+    {%- for item in site.data.social_networks -%}
     <div class="grid-item">
       <a href="{{ item.url }}">
         <div id="{{ item.css_image_id }}"></div>
       </a>
     </div>
-    {% endfor %}
+    {%- endfor -%}
   </div>
 </section>

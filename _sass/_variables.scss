@@ -1,4 +1,16 @@
-$link-color: #ff0000;
+// Sizes
+$max-width: 900px;
 $on-mobile: 600px !default;
 $on-laptop: 800px !default;
+$default-content-padding: 20px;
+
+// Colors
 $light-grey: #cdcdcd;
+$link-color: #04AA6D;
+
+$nav-active-background: #04AA6D;
+$nav-active-text: white;
+$nav-background: #333;
+$nav-hover-background: #ddd;
+$nav-hover-text: black;
+$nav-link-text: #f2f2f2;

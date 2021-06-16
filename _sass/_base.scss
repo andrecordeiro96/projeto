@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "header";
 @import "index";
 @import "contacts";
 @import "projects";
@@ -9,3 +10,37 @@ a:link { color: $link-color }
 a:active { color: $link-color }
 a:visited { color: $link-color }
 a:hover { color: $link-color }
+
+html, body {
+  /* IE 10-11 didn't like using min-height */
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: $max-width;
+  margin: auto;
+}
+
+#content {
+  padding-right: $default-content-padding;
+  padding-left: $default-content-padding;
+  flex: 1;
+}
+
+#footer {
+  padding-right: $default-content-padding;
+  padding-left: $default-content-padding;
+  flex-shrink: 0;
+}
+
+#header {
+  padding-right: $default-content-padding;
+  padding-left: $default-content-padding;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

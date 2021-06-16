@@ -1,0 +1,35 @@
+#header {
+  #name {
+    text-align: center;
+  }
+
+  #nav {
+    display: flex;
+    background-color: $nav-background;
+
+    a {
+      padding: 15px 15px;
+      float: left;
+      display: block;
+      color: $nav-link-text;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: $nav-hover-background;
+      color: $nav-hover-text;
+    }
+
+    a#active {
+      background-color: $nav-active-background;
+      color: $nav-active-text;
+    }
+  }
+
+  @include media-query($on-mobile) {
+    #nav {
+      flex-direction: column;
+    }
+  }
+}

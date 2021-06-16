@@ -4,14 +4,14 @@ title: Projectos
 ---
 
 <ul>
-{% for project in site.projects %}
-  <li>
-    <h2>
-      <a href="{{ project.url }}">
-        {{ project.title }}
-      </a>
-    </h2>
-    <img src="/assets/img/{{ project.image_path }}" alt="{{ project.image_alt }}">
-  </li>
-{% endfor %}
+  {% for project in site.projects %}
+    <li>
+      <h2>
+        <a href="{{ project.url }}">
+          {{ project.title }}
+        </a>
+      </h2>
+      <img src="/assets/img/{{ project.image_path }}" alt="{{ project.image_alt }}">
+    </li>
+  {% endfor %}
 </ul>

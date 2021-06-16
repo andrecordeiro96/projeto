@@ -1,10 +1,9 @@
 - title: Behance
   url: https://www.behance.net/andrecordeiro96
-  image_path: behance.png
+  css_image_id: be
 - title: Linkedin
   url: https://www.linkedin.com/in/andrecordeiro96
-  image_path: linkedin.png
+  css_image_id: in
 - title: Email
   url: mailto:andrecordeiro9667@gmail.com
-  image_path: email.png
-
+  css_image_id: youtube

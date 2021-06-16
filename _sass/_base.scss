@@ -1,6 +1,11 @@
 @import "variables";
-@import "home";
+@import "mixins";
+@import "index";
+@import "contacts";
+@import "projects";
+@import "project";
 
-a {
-  color: $link-color;
-}
+a:link { color: $link-color }
+a:active { color: $link-color }
+a:visited { color: $link-color }
+a:hover { color: $link-color }

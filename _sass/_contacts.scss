@@ -1,0 +1,32 @@
+#contacts {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    padding: 10px;
+  }
+
+  .grid-item {
+    padding: 20px;
+  }
+
+  .grid-item img {
+    max-height: 100px;
+    max-width: 80%;
+  }
+
+  @include media-query($on-laptop) {
+    .grid-container {
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @include media-query($on-mobile) {
+    .grid-container {
+      grid-template-columns: auto;
+    }
+  }
+
+  @include contact-image("be");
+  @include contact-image("in");
+  @include contact-image("youtube");
+}

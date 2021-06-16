@@ -1,0 +1,28 @@
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin retina-only {
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+
+@mixin contact-image($name) {
+  ##{$name} {
+    height: 200px;
+    max-height: 200px;
+    width: 100%;
+    background-image: url("/assets/img/#{$name}_256px.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include retina-only {
+      background-image: url("/assets/img/#{$name}_512px.png");
+    }
+  }
+}

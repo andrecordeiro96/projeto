@@ -10,7 +10,6 @@
   }
 }
 
-
 @mixin contact-image($name) {
   ##{$name} {
     height: 200px;
@@ -24,5 +23,14 @@
     @include retina-only {
       background-image: url("/assets/img/#{$name}_512px.png");
     }
+  }
+}
+
+@mixin bounce($scale: 1.02) {
+  transform: none;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale($scale);
   }
 }

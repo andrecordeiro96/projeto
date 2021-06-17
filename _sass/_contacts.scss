@@ -6,6 +6,8 @@
   }
 
   .grid-item {
+    @include bounce(1.1);
+
     padding: 20px;
   }
 

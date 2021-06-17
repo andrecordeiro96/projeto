@@ -8,7 +8,6 @@
   .grid-item {
     margin-bottom: 20px;
     min-width: 0;
-    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     a {
@@ -32,9 +31,11 @@
 
       h2 {
         text-decoration: underline;
+        margin-bottom: 0;
       }
 
-      p {
+      h3 {
+        margin-top: 0;
         color: black;
         text-transform: uppercase;
       }

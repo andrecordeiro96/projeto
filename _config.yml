@@ -30,6 +30,7 @@ plugins:
 
 # Navigation
 header_pages:
+  - index.html
   - about.html
   - projects.html
   - contacts.html

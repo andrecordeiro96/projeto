@@ -3,14 +3,16 @@ layout: home
 title: Contacts
 ---
 
-<section id="contacts">
-  <div id="grid-container">
-    {%- for item in site.data.contacts -%}
-    <div class="grid-item">
-      <a href="{{ item.url }}">
-        <div id="{{ item.css_image_id }}"></div>
-      </a>
+<article>
+  <section id="contacts">
+    <div id="grid-container">
+      {%- for item in site.data.contacts -%}
+      <div class="grid-item">
+        <a href="{{ item.url }}">
+          <div id="{{ item.css_image_id }}"></div>
+        </a>
+      </div>
+      {%- endfor -%}
     </div>
-    {%- endfor -%}
-  </div>
-</section>
+  </section>
+</article>

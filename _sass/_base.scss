@@ -6,6 +6,7 @@
 @import "contacts";
 @import "projects";
 @import "project";
+@import "about";
 
 a:link { color: $link-color }
 a:active { color: $link-color }
@@ -25,7 +26,11 @@ body {
   margin: auto;
 }
 
-h1, h2, h3 {
+h1 {
+  color: $highlight-color;
+}
+
+h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
 }
 

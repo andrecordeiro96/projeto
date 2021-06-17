@@ -3,12 +3,31 @@ layout: home
 title: About
 ---
 
-<p>
-  O meu nome é André Cordeiro, e sou actualmente estudante da pós-graduação de DXD, Digital Experience Design.
-</p>
-<p>
-  Fui aluno de Design de Comunicação na Escola Artística António Arroio durante o ensino secundário e
-  depois tirei a licenciatura de Design de Comunicação através da Faculdade de Belas-Artes da Universidade de Lisboa,
-  onde actualmente estudo. Tenho interesse em prosseguir com a carreira de UI/UX designer. Obrigado por ler
-  o meu portfólio!
-</p>
+<article>
+  <section>
+    <p>
+      I’m a recent graduate from the post-graduate course in Digital Experience Design and also a graduate from
+      the bachelor of Communication Design both at the Fine-Arts Academy part of University of Lisbon (FBAUL).
+    </p>
+    <p>
+      I’m interested in Design and User Experience and how designers have the ability to better the lives of the
+      people around us.
+    </p>
+    <p>
+      I’m very eager to design customer-focused interfaces such as checkout and digital sales and how to better
+      these experiences.
+    </p>
+  </section>
+  <section>
+    <h2>Experience</h2>
+
+    {%- for item in site.data.experience -%}
+      <section id="experience">
+        <h5>{{ item.date }}</h5>
+        <h4>{{ item.institution }}</h4>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </section>
+    {%- endfor -%}
+  </section>
+</article>

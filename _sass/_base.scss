@@ -26,23 +26,20 @@ body {
 }
 
 #content {
-  padding-right: $default-content-padding;
-  padding-left: $default-content-padding;
+  padding: 0 $default-content-padding 0 $default-content-padding;
   flex: 1;
 }
 
 #footer {
-  padding-right: $default-content-padding;
-  padding-left: $default-content-padding;
+  padding: 0 $default-content-padding 0 $default-content-padding;
   flex-shrink: 0;
 }
 
 #header {
-  padding-right: $default-content-padding;
-  padding-left: $default-content-padding;
+  padding: 0 $default-content-padding 0 $default-content-padding;
 }
 
 img {
-  max-width: 100%;
+  max-width: calc(100% - #{2 * $default-content-padding});
   height: auto;
 }

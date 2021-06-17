@@ -3,6 +3,15 @@
     text-align: center;
   }
 
+  div {
+    letter-spacing: normal;
+    transition: letter-spacing 2s;
+  }
+
+  div:hover {
+    letter-spacing: 20px;
+  }
+
   #nav {
     display: flex;
     border-top: 1px solid;

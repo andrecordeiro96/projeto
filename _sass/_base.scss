@@ -25,6 +25,14 @@ body {
   margin: auto;
 }
 
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 #content {
   padding: 0 $default-content-padding 0 $default-content-padding;
   flex: 1;
@@ -37,9 +45,4 @@ body {
 
 #header {
   padding: 0 $default-content-padding 0 $default-content-padding;
-}
-
-img {
-  max-width: calc(100% - #{2 * $default-content-padding});
-  height: auto;
 }
